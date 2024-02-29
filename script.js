@@ -17,6 +17,7 @@ searchBtn.addEventListener("click", () => {
       console.log(
         Object.values(data[0].languages).toString().split(",").join(",")
       );
-      result.innerHTML = `<img src=" ${data[0].flags.svg} class="flag-img">`;
+      result.innerHTML = `<img src=" ${data[0].flags.svg} class="flag-img"> <h2>${data[0].name.common}</h2> <div class="wrapper"><div class="data-wrapper"></div>
+      </div>`;
     });
 });
